@@ -1,6 +1,20 @@
 {% extends "templates/login.html" %}
 {% block login %}
+
+<head>
+<style>
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+</style>
+</head>
+
 <div class='container branding'>
+<div class="vertical-center">
 <img
 src='https://datajoint.io/static/images/datajointlogofull.png'>
 <p align="center">
@@ -11,6 +25,7 @@ src='https://datajoint.io/static/images/datajointlogofull.png'>
     the pipelines properly. Maybe describe how access is<br>
     configured as well.<br>
 </p>
+</div>
 </div>
 
 {{ super() }}
